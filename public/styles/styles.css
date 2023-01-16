@@ -1,0 +1,377 @@
+/* Default Colors */
+
+:root {
+    --main-color: #0089FF;
+    --accent-orange-color: #FF4909;
+    --background-color: #060200;
+    --text-color: #fff;
+    --light-black-fill: #111111;
+
+
+  }
+  
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+body{
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+}
+
+h1{
+    font-size: 7em;
+    font-weight: 700;
+}
+
+h3, h4{
+    font-size: 2.618rem;
+    font-weight: 600;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* 
+hero styling */
+
+.hero-container {
+    background-image: url('/public/images/HeroImage.png');
+    background-repeat: no-repeat;
+    background-position: right;
+  
+   }
+   
+
+.hero-content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+   }
+
+   /* .hero-content .hero-title {
+    margin-bottom: 1rem;
+   } */
+   
+
+   .hero-content .primary-button{
+    margin-right: 1rem;;
+   }
+
+   .hero-text {
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 500px;
+   }
+   
+   .hero-button-container a{
+    text-decoration: none;
+   }
+
+/* primary button CSS */
+.primary-button{
+  appearance: button;
+  display: block;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 15px 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.primary-button:disabled {
+  cursor: default;
+}
+
+.primary-button:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+/* CSS */
+.secondary-button{
+    appearance: button;
+    display: block;
+    backface-visibility: hidden;
+    background-color: #405bf500;
+    border: 1px solid white;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 15px 40px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .secondary-button:disabled {
+    cursor: default;
+  }
+  
+  .secondary-button:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  }
+
+  .scroll-indicator {
+    margin: 1rem 0;
+   }
+   
+
+  .svg-container {
+    align-content: center;
+    display: grid;
+    place-content: center;
+  }
+
+
+.arrows {
+	width: 60px;
+	height: 72px;
+}
+
+.arrows path {
+	stroke: var(--accent-orange-color);
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+/* 
+services card boxes */
+
+#services {
+    padding: 5rem 0;
+   }
+   
+   .service-box-container {
+    margin-bottom: 5rem;
+  }
+  .services-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+.card-box {
+    padding: 3rem 5rem;
+    text-align: center;
+    margin-right:2rem;
+      background-color: #111111;
+    border-radius: 10px;
+    background-image: repeating-linear-gradient(-19deg, #808080, #808080 16px, transparent 16px, transparent 26px, #808080 26px), repeating-linear-gradient(71deg, #808080, #808080 16px, transparent 16px, transparent 26px, #808080 26px), repeating-linear-gradient(161deg, #808080, #808080 16px, transparent 16px, transparent 26px, #808080 26px), repeating-linear-gradient(251deg, #808080, #808080 16px, transparent 16px, transparent 26px, #808080 26px); background-size: 1px 100%, 100% 1px, 1px 100% , 100% 1px; background-position: 0 0, 0 0, 100% 0, 0 100%; background-repeat: no-repeat; 
+  }
+  
+  .card-box:nth-child(2) {
+    background-color: #405cf5;
+    
+  }
+  
+  .card-box:nth-last-child(1) {
+    margin-right: 0rem
+    
+  }
+  
+  .card-box p{
+    font-size: 1.55rem;
+    line-height: 35px;
+    
+   
+  }
+  
+  .card-box p.number{
+    font-size: 1.95rem;
+    font-weight: 800;
+    
+   
+  }
+
+  .services-text {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+  }
+  .service-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .tech-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 2rem 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    background-color: var(--light-black-fill);
+    align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-content: space-between;
+
+        
+        
+  }
+
+
+    .technologies-button-container.justify-content-between.d-flex {
+        width: 100%;
+        max-width: 315px;
+        margin: auto;
+      }
+    
+      .tech-card  .img-container{
+        background-color: var(--background-color);
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        display: grid;
+        place-content: center;
+      }
+
+      .arrow-container {
+        display: grid;
+        place-content: end;
+      }
