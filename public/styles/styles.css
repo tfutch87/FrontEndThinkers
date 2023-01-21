@@ -375,3 +375,137 @@ services card boxes */
         display: grid;
         place-content: end;
       }
+/* 
+      about me */
+
+      .about-me-wrap{
+        padding: 5rem;
+      }
+
+      .about-me-container{
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+      }
+
+      .about-me-container h2{
+        font-weight: 600;
+         }
+
+      .about-me-container p{
+      line-height: 1.7;
+       }
+
+    .button-container .primary-button{
+      margin-right: 1rem;
+    }
+    .left-side {
+      position: relative;
+    }
+    
+    .floating-years{
+      width: 150px;
+      height: 150px;
+      background-color: #111111;
+      border-radius: 10px;
+      left: 0px;
+      top: 100px;
+      position: absolute;
+      padding: 0 1rem;
+    }
+
+
+#dashes {
+  justify-content: space-between;
+  margin-bottom: 1rem
+}
+
+#dashes > div {
+width: 10px;
+  height: 20px;
+  background-color: white;
+  
+}
+
+section{
+  margin-bottom: 7rem;
+}
+
+/* 
+cta section */
+
+#large-cta{
+
+background: url('https://images.unsplash.com/photo-1521790361543-f645cf042ec4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80'), rgba(1, 5, 44, 0.684);;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-blend-mode: multiply;
+
+}
+
+.cta-container{
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+/* 
+blog section */
+
+#blog-wrapper .card{
+  background-color: var(--light-black-fill);
+  max-width: 400px;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+#blog-wrapper .card h5{
+  line-height: 1.7;
+
+}
+
+#blog-wrapper .card a{
+
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+
+}
+
+#blog-wrapper .card img{
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+
+}
+
+
+.read-more {
+  padding-right: 1rem;
+}
+.card-footer {
+  padding-bottom: 2rem;
+}
+
+#blog-wrapper .primary-button{
+  max-width: 200px;
+  margin: auto;
+}
+
+#large-cta h2{
+  font-weight: 700;
+}
+
+#large-cta .primary-button{
+  max-width: 200px;
+  margin: auto;
+}
+
+.primary-button{
+  text-decoration: none;
+}
+
+.secondary-button{
+  text-decoration: none;
+}
