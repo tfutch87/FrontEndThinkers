@@ -7,7 +7,6 @@
     --text-color: #fff;
     --light-black-fill: #111111;
 
-
   }
   
 
@@ -52,12 +51,15 @@ header{
  display: flex;
  justify-content: space-between;
  padding: 2rem 0;
+ z-index: 100;
+position: relative;
+margin-bottom: 5rem;
 }
 
 
 
 h1{
-    font-size: 7em;
+    font-size: 5em;
     font-weight: 700;
 }
 
@@ -67,9 +69,11 @@ h3, h4{
 }
 
 p{
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 200;
 }
+
+
 
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -138,6 +142,12 @@ header */
   border-bottom: 1px solid var(--accent-orange-color);
 }
 
+
+.orange-bottom{
+  background-color: var(--accent-orange-color) !important;
+}
+
+
 .nav-link {
   color: #fff;
   border-radius: 0 !important;
@@ -159,20 +169,40 @@ background-color: var(--light-black-fill);
 /* 
 hero styling */
 
-.hero-container {
+/* .hero-container {
     background-image: url('/public/images/HeroImage.png');
     background-repeat: no-repeat;
     background-position: right;
   
+   } */
+
+
+ 
+   #services .services-text{
+    opacity: 0;
+    transform: translateY(20px);
    }
 
-   .hero-button-container.d-flex {
-    margin-bottom: 5rem;
+  .wrapper.container {
+    min-height: 600px;
   }
 
-   .hero-content-container {
-    width: 50%;
+  .wrapper.left {
+    width: 100%;
+    height: 100%;
   }
+
+  .wrapper.right {
+    width: 100%;
+  }
+
+   .hero-content-container.left {
+    flex-basis: 40%;
+  }
+  .hero-content-container.right {
+    flex-basis: 60%;
+  }
+
   .hero-content.d-flex {
     flex-wrap: wrap;
   }
@@ -181,10 +211,17 @@ hero styling */
   }
    
 
-.hero-content {
-    padding-top: 5rem;
+  #lottie-player {
+    margin-top: -150px;
+    min-height: 620px;
+  }
+
+/* .hero-content {
+    align-content: center;
+    align-items: center;
     padding-bottom: 5rem;
-   }
+   } */
+   
 
   .height-200{
     height: 200px;
@@ -198,10 +235,17 @@ hero styling */
     margin: 2rem 0;
     width: 100%;
     max-width: 500px;
+    opacity: 0;
+    transform: translateY(-100px);
    }
    
    .hero-button-container a{
     text-decoration: none;
+   }
+
+   .hero-button-container{
+    opacity: 0;
+    transform: translateY(100px);
    }
 
 /* primary button CSS */
@@ -218,7 +262,6 @@ hero styling */
   cursor: pointer;
   font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
   font-size: 100%;
-  height: 44px;
   line-height: 1.15;
   margin: 12px 0 0;
   outline: none;
@@ -256,12 +299,11 @@ hero styling */
     cursor: pointer;
     font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
     font-size: 100%;
-    height: 44px;
     line-height: 1.15;
     margin: 12px 0 0;
     outline: none;
     overflow: hidden;
-    padding: 15px 40px;
+    padding: 15px 25px;
     position: relative;
     text-align: center;
     text-transform: none;
@@ -342,10 +384,6 @@ services card boxes */
    .service-box-container {
     margin-bottom: 5rem;
   }
-  .services-container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
 
 .card-box {
     padding: 3rem 5rem;
@@ -356,7 +394,7 @@ services card boxes */
     background-image: repeating-linear-gradient(-19deg, #808080, #808080 16px, transparent 16px, transparent 26px, #808080 26px), repeating-linear-gradient(71deg, #808080, #808080 16px, transparent 16px, transparent 26px, #808080 26px), repeating-linear-gradient(161deg, #808080, #808080 16px, transparent 16px, transparent 26px, #808080 26px), repeating-linear-gradient(251deg, #808080, #808080 16px, transparent 16px, transparent 26px, #808080 26px); background-size: 1px 100%, 100% 1px, 1px 100% , 100% 1px; background-position: 0 0, 0 0, 100% 0, 0 100%; background-repeat: no-repeat; 
   }
   
-  .card-box:nth-child(2) {
+  .card-box:hover{
     background-color: var(--main-color);
     
   }
@@ -413,7 +451,7 @@ services card boxes */
     .technologies-button-container.justify-content-between.d-flex {
         width: 100%;
         max-width: 315px;
-        margin: auto;
+        margin: 3rem auto;
       }
     
       .tech-card  .img-container{
@@ -436,18 +474,22 @@ services card boxes */
         padding: 5rem;
       }
 
-      .about-me-container{
+      .about-me-wrap .about-me-container{
        display: flex;
        align-items: center;
        justify-content: center;
        gap: 2rem;
       }
 
-      .about-me-container h2{
+      .about-me-wrap .about-me-heading {
+        font-size: 4rem;
+      }
+
+      .about-me-wrap .about-me-container h2{
         font-weight: 600;
          }
 
-      .about-me-container p{
+         .about-me-wrap .about-me-container p{
       line-height: 1.7;
        }
 
@@ -456,12 +498,29 @@ services card boxes */
     }
     .left-side {
       position: relative;
-      width: 60%;
+      width: 46%;
     }
 
     .right-side {
-      width: 40%;
+      width: 55%;
      }
+
+     #service-offered .service {
+     
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    #service-offered h3{
+      font-size: 1.75rem;
+      margin-bottom: .75rem;
+    }
+
+    #service-offered p{
+      font-size: 1rem;
+    }
+     
      
     
     .floating-years{
@@ -649,6 +708,7 @@ padding-bottom: .75rem;
   margin-bottom: 2rem;
 }
 
+
 /* 
 mobile styling */
 
@@ -661,6 +721,10 @@ mobile styling */
 
   .height-200{
     height: 0;
+  }
+
+  .hero-content-container.right{
+    display: none;
   }
 
 
@@ -769,6 +833,7 @@ mobile styling */
     margin-right: 0;
 }
 
+
 div.social-media-wrapper:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:nth-child(2) > a:nth-child(1) {
   font-size: .75rem;
  }
@@ -826,6 +891,14 @@ div.social-media-wrapper:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:
             width: 50px;
           }
 
+          .hero-content {
+            margin-top: -11px;
+           }
+
+           .hero-content-container.left, .hero-content-container.right {
+            flex-basis: 100%;
+          }
+
 }
 
 .tech-card .img-container{
@@ -861,4 +934,59 @@ div.social-media-wrapper:nth-child(3) > div:nth-child(1) > div:nth-child(2) > p:
 	100% {top: 0;
 		-webkit-animation-timing-function: ease-in-out;
 	}
+}
+
+/* 
+portfolio styling */
+
+
+.tab-item {
+  position: relative;
+  height: 200px;
+  margin-bottom: 2rem;
+}
+
+.project-details-container {
+position: absolute;
+  transition: all .2s ease-in-out;
+  bottom: 0px;
+  padding: 2rem .75rem 2rem;
+  background-color: #0000008f;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+   opacity: 0;
+  transition: all 300ms 100ms ease-in-out;
+}
+
+
+
+.tab-item:hover .project-details-container{
+
+      height: 100%;
+   visibility: visible;
+   height: 49%;
+    opacity: 1;
+
+}
+
+.tab-item:hover .img-container img{
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
+  transform: translateY(-50px);
+}
+
+.tab-item img {
+  width: 100%;
+  height: 231px;
+  object-fit: cover;
+     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+     filter: gray; /* IE5+ */
+     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+     -webkit-transition: all 300ms 100ms ease-in-out;
+     transition: all 300ms 100ms ease-in-out;
+}
+.tab-item .img-container {
+  height: 289px;
 }
