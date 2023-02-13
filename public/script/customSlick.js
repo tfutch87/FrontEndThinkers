@@ -21,7 +21,8 @@ $('#testimonies-container').slick({
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 1,
+          
         }
       }
     ]
@@ -164,7 +165,8 @@ $('#testimonies-container').slick({
           arrows: true,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 3
+          slidesToShow: 3,
+          variableWidth: true
         }
       },
       {
@@ -173,7 +175,8 @@ $('#testimonies-container').slick({
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 2
+          slidesToShow: 2,
+          variableWidth: true
         }
 
       }

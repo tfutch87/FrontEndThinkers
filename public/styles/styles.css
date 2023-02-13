@@ -714,13 +714,42 @@ mobile styling */
 
 @media only screen and (max-width: 680px){
 
+  p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+  #blog-wrapper .card h5 {  
+    font-size: 1rem;
+  }
+
   .hero-content-container {
     width: 100%;
     /*! flex-wrap: wrap; */
   }
 
+  .about-me-wrap .about-me-container {
+    flex-wrap: wrap;
+   }
+
   .height-200{
     height: 0;
+  }
+
+  .contact a {
+    font-size: .85rem;
+  }
+
+  #blog-wrapper .card{
+    margin-left: 0;
+  }
+
+  .about-me-wrap .about-me-heading {
+    font-size: 2.75rem;
+  }
+
+  .project-details-container p {
+    font-size: 1rem;
   }
 
   .hero-content-container.right{
@@ -755,7 +784,7 @@ mobile styling */
   }
 
   .hero-title {
-    font-size: 4rem;
+    font-size: 3rem;
    }
    .card-box{
     margin-right: 0;
@@ -949,7 +978,7 @@ portfolio styling */
 .project-details-container {
 position: absolute;
   transition: all .2s ease-in-out;
-  bottom: 0px;
+  bottom: 40px;
   padding: 2rem .75rem 2rem;
   background-color: #0000008f;
   height: 0;
