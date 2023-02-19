@@ -183,3 +183,37 @@ $('#testimonies-container').slick({
     ]
   });
 
+
+  $('.tab-items').slick({
+    centerPadding: '20px',
+    slidesToShow: 4,
+    auto: true,
+    infinite: true,
+    autoplaySpeed: 200,
+    slidesToScroll: 1,
+    prevArrow: false,
+    nextArrow: false,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1,
+          centerPadding: '20px',
+          variableWidth: true
+        }
+      }
+    ]
+  });

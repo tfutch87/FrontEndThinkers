@@ -49,11 +49,13 @@
   .tab-items{
     gap: 20px;
     padding: 1rem;
+    min-height: 330px !important;
   }
   
   .tab-item {
     width: 100%;
     max-width: 335px;
+    margin-top: 2rem;
   }
   
   

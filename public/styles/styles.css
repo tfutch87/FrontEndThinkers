@@ -50,10 +50,10 @@ body{
 header{
  display: flex;
  justify-content: space-between;
- padding: 2rem 0;
+ padding: 1rem 0;
  z-index: 100;
 position: relative;
-margin-bottom: 5rem;
+
 }
 
 
@@ -190,10 +190,12 @@ hero styling */
   .wrapper.left {
     width: 100%;
     height: 100%;
+    margin-bottom: 3rem;
   }
 
   .wrapper.right {
     width: 100%;
+    margin-bottom: 3rem;
   }
 
    .hero-content-container.left {
@@ -237,6 +239,16 @@ hero styling */
     max-width: 500px;
     opacity: 0;
     transform: translateY(-100px);
+    text-align: center;
+    margin: 30px auto;
+   }
+
+   main{
+    padding: 5rem 0;
+    background-image: url('/public/images/night_sky.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
    }
    
    .hero-button-container a{
@@ -512,6 +524,11 @@ services card boxes */
       line-height: 1.7;
     }
 
+    .service, #portfolio .services-container{
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
     #service-offered h3{
       font-size: 1.75rem;
       margin-bottom: .75rem;
@@ -717,6 +734,16 @@ mobile styling */
   p {
     font-size: 1rem;
     font-weight: 200;
+}
+
+.tab-content {
+  margin-left: 0;
+  margin-right: 0x;
+}
+
+.tab-items {
+  gap: 20px;
+  padding:0;
 }
 
   #blog-wrapper .card h5 {  
@@ -971,7 +998,6 @@ portfolio styling */
 
 .tab-item {
   position: relative;
-  height: 200px;
   margin-bottom: 2rem;
 }
 
@@ -1018,4 +1044,8 @@ position: absolute;
 }
 .tab-item .img-container {
   height: 289px;
+}
+
+.project-details {
+  font-size: 14px;
 }
