@@ -2,7 +2,7 @@ gsap.registerPlugin(TextPlugin);
 
 let tl = gsap.timeline({});
 
-tl.to('.hero-title', {duration: 1, text: "FrontEnd Done Right", ease: "none"});
+// tl.to('.hero-title', {duration: 1, text: "FrontEnd Done Right", ease: "none"});
 
 tl.to('.hero-text', {opacity: 1, y: 0});
 
@@ -22,26 +22,26 @@ gsap.to("#services .services-text", {
 
  
 
-  gsap.to(".services-container", {
-    scrollTrigger: {
-        trigger: "#portfolio",
-        scrub: true
-    }, // start the animation when ".box" enters the viewport (once)
-    y: 0,
-    opacity: 1,
-    stagger: 0.2
+  // gsap.to(".services-container", {
+  //   scrollTrigger: {
+  //       trigger: "#portfolio",
+  //       scrub: true
+  //   }, // start the animation when ".box" enters the viewport (once)
+  //   y: 0,
+  //   opacity: 1,
+  //   stagger: 0.2
     
-  });
+  // });
 
-  gsap.to(".service", {
-    scrollTrigger: {
-        trigger: ".service",
-    }, // start the animation when ".box" enters the viewport (once)
-    y: 0,
-    opacity: 1,
-    stragger: 0.2
+  // gsap.to(".service", {
+  //   scrollTrigger: {
+  //       trigger: ".service",
+  //   }, // start the animation when ".box" enters the viewport (once)
+  //   y: 0,
+  //   opacity: 1,
+  //   stragger: 0.2
     
-  });
+  // });
 
   
 
@@ -104,19 +104,19 @@ gsap.to("#services .services-text", {
     opacity: 1
   })
 
-gsap.set('.about-me-container', {opacity: 0.5,y: 20});
+// gsap.set('.about-me-container', {opacity: 0.5,y: 20});
 
-gsap.to('.about-me-container', {
-  stagger: 0.25,
-  scrollTrigger: {
-      trigger: "#about-me", // start the animation when ".box" enters the viewport (once)
-      start: "top center",
-      scrub: true
-  },
-  y: 0,
-  opacity: 1
+// gsap.to('.about-me-container', {
+//   stagger: 0.25,
+//   scrollTrigger: {
+//       trigger: "#about-me", // start the animation when ".box" enters the viewport (once)
+//       start: "top center",
+//       scrub: true
+//   },
+//   y: 0,
+//   opacity: 1
 
-})
+// })
 
 gsap.set('.blog-container .card', {opacity: 0.1, y: 20});
 

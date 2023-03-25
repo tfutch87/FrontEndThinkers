@@ -24,6 +24,10 @@
         z-index: 999;
     }
 
+    .hero-text {
+        max-width: 250px;
+      }
+
     .hamburger-menu{
         position: relative;
         display: block;
@@ -42,7 +46,7 @@
         display: block;
         width: 100%;
         height: 1px;
-        background-color: whitesmoke;
+        background-color: #0089fe;
         margin: 6px 0;
         transition: 0.4s;
         z-index: 990;
@@ -79,7 +83,7 @@
         position: fixed;
         min-height: 100vh;
         z-index: 99;
-        background-color: var(--light-black-fill);
+        background-color: var(--accent-blue-color);
         padding-top: 70px;
         transition: 0.4s;
     }
@@ -104,6 +108,10 @@
       }
       .hero-button-container.d-flex {
         justify-content: center;
+      }
+
+      #services {
+        margin-bottom: 0;
       }
     
 

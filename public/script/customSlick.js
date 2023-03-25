@@ -55,66 +55,66 @@ $('#testimonies-container').slick({
     ]
   });
 
-  $('#service-offered').slick({
-    centerMode: true,
-    centerPadding: '20px',
-    slidesToShow: 4,
-    prevArrow: false,
-    infinite: true,
-    nextArrow: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
+  // $('#service-offered').slick({
+  //   centerMode: true,
+  //   centerPadding: '20px',
+  //   slidesToShow: 4,
+  //   prevArrow: false,
+  //   infinite: true,
+  //   nextArrow: false,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         arrows: true,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 3
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 1
+  //       }
+  //     }
+  //   ]
+  // });
 
 
-  $('.logos').slick({
-    centerPadding: '20px',
-    slidesToShow: 4,
-    auto: true,
-    infinite: true,
-    autoplaySpeed: 200,
-    slidesToScroll: 1,
-    prevArrow: false,
-    nextArrow: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
+  // $('.logos').slick({
+  //   centerPadding: '20px',
+  //   slidesToShow: 4,
+  //   auto: true,
+  //   infinite: true,
+  //   autoplaySpeed: 200,
+  //   slidesToScroll: 1,
+  //   prevArrow: false,
+  //   nextArrow: false,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         arrows: true,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 3
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 1
+  //       }
+  //     }
+  //   ]
+  // });
 
  
 
@@ -149,71 +149,71 @@ $('#testimonies-container').slick({
     ]
   });
 
-  $('.tabs').slick({
-    centerPadding: '20px',
-    slidesToShow: 4,
-    auto: true,
-    infinite: true,
-    autoplaySpeed: 200,
-    slidesToScroll: 1,
-    prevArrow: false,
-    nextArrow: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3,
-          variableWidth: true
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 2,
-          variableWidth: true
-        }
+  // $('.tabs').slick({
+  //   centerPadding: '20px',
+  //   slidesToShow: 4,
+  //   auto: true,
+  //   infinite: true,
+  //   autoplaySpeed: 200,
+  //   slidesToScroll: 1,
+  //   prevArrow: false,
+  //   nextArrow: false,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         arrows: true,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 3,
+  //         variableWidth: true
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 2,
+  //         variableWidth: true
+  //       }
 
-      }
-    ]
-  });
+  //     }
+  //   ]
+  // });
 
 
-  $('.tab-items').slick({
-    centerPadding: '20px',
-    slidesToShow: 4,
-    auto: true,
-    infinite: true,
-    autoplaySpeed: 200,
-    slidesToScroll: 1,
-    prevArrow: false,
-    nextArrow: false,
-    variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1,
-          centerPadding: '20px',
-          variableWidth: true
-        }
-      }
-    ]
-  });
+  // $('.tab-items').slick({
+  //   centerPadding: '20px',
+  //   slidesToShow: 4,
+  //   auto: true,
+  //   infinite: true,
+  //   autoplaySpeed: 200,
+  //   slidesToScroll: 1,
+  //   prevArrow: false,
+  //   nextArrow: false,
+  //   variableWidth: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         arrows: true,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 3
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 1,
+  //         centerPadding: '20px',
+  //         variableWidth: true
+  //       }
+  //     }
+  //   ]
+  // });
