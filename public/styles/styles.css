@@ -1106,7 +1106,7 @@ position: absolute;
 .tab-item img {
   width: 100%;
   height: 231px;
-  object-fit: cover;
+  object-fit: contain;
      -webkit-transition: all 300ms 100ms ease-in-out;
      transition: all 300ms 100ms ease-in-out;
 }
